@@ -1,2 +1,1 @@
-# neptune-imu
-Project Neptune IMU PCB
+# Neptune IMU PCB
