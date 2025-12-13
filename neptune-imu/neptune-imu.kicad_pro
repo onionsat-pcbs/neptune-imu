@@ -617,6 +617,10 @@
     [
       "a0b4a2ba-424d-45a3-b6bc-43ffcdb6bc53",
       "ICM20948 sensors"
+    ],
+    [
+      "c385354e-c644-4b4a-bcac-6e87af3cb5e2",
+      "ADXL375"
     ]
   ],
   "text_variables": {}
