@@ -485,6 +485,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+1V8"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+1V8"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+1V8\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+1V8_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+1V8_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers
@@ -724,7 +849,7 @@
 		)
 		(uuid 595d4f88-eaed-4439-9da4-651dc808c3ab)
 	)
-	(text_box "Precision Temperature Sensor (RTD) nr 1.\n"
+	(text_box "Accelerometer nr 1.\n"
 		(exclude_from_sim no)
 		(at 19.05 17.78 0)
 		(size 31.75 5.08)
@@ -953,29 +1078,7 @@
 		)
 		(uuid "f93eca5f-09f4-4e67-860b-969bd3bd865a")
 	)
-	(global_label "SPI1_MISO"
-		(shape output)
-		(at 102.87 46.99 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7ca2e588-b0c4-40c6-b552-70912c5ae9a7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 115.7128 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SPI1_SCK"
+	(global_label "SCK_1v8"
 		(shape input)
 		(at 102.87 41.91 0)
 		(fields_autoplaced yes)
@@ -985,9 +1088,9 @@
 			)
 			(justify left)
 		)
-		(uuid "e1eba94a-f086-4693-a252-11b6dd7d81f8")
+		(uuid "3a61f49c-3442-4dc5-8e39-102cbc84acfd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 114.8661 41.91 0)
+			(at 113.9589 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -997,7 +1100,7 @@
 			)
 		)
 	)
-	(global_label "SPI1_MOSI"
+	(global_label "MOSI_1v8"
 		(shape input)
 		(at 102.87 44.45 0)
 		(fields_autoplaced yes)
@@ -1007,9 +1110,31 @@
 			)
 			(justify left)
 		)
-		(uuid "edaabda3-7f6d-4a8a-b806-d3c690ce078a")
+		(uuid "69e20d64-3509-4335-91c7-12e2689c6073")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 115.7128 44.45 0)
+			(at 114.8056 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MISO_1v8"
+		(shape output)
+		(at 102.87 46.99 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b54aa89e-8561-4e88-b21d-bb6cf9c58699")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 114.8056 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1523,73 +1648,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 50.8 41.91 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "913726a9-e0fd-4fcc-bc6f-c61fea7b12c2")
-		(property "Reference" "#PWR018"
-			(at 54.61 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 46.99 41.9099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 50.8 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "939fadc7-cd21-45b3-9a14-c2e04ec70216")
-		)
-		(instances
-			(project "neptune-imu"
-				(path "/5267d5be-f3eb-4ed0-80b1-f192444f0b69/c385354e-c644-4b4a-bcac-6e87af3cb5e2"
-					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 53.34 52.07 270)
 		(unit 1)
@@ -1651,6 +1709,73 @@
 			(project "neptune-imu"
 				(path "/5267d5be-f3eb-4ed0-80b1-f192444f0b69/c385354e-c644-4b4a-bcac-6e87af3cb5e2"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+1V8")
+		(at 50.8 41.91 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b3029bbc-4dbe-4452-9162-257fed1accde")
+		(property "Reference" "#PWR018"
+			(at 54.61 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+1V8"
+			(at 46.99 41.9099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V8\""
+			(at 50.8 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "480dd442-39f9-41bc-930b-178b6f405ee3")
+		)
+		(instances
+			(project ""
+				(path "/5267d5be-f3eb-4ed0-80b1-f192444f0b69/c385354e-c644-4b4a-bcac-6e87af3cb5e2"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -1818,7 +1943,7 @@
 				)
 			)
 		)
-		(property "Footprint" "szar:LGA-14_L5.0-W3.0-P0.80-BL-1"
+		(property "Footprint" ""
 			(at 78.74 64.77 0)
 			(effects
 				(font

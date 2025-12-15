@@ -1657,7 +1657,7 @@
 		)
 		(uuid "fe460541-a3bb-4afa-bc3c-fe2d25406438")
 	)
-	(global_label "SPI1_MOSI"
+	(global_label "MOSI_1v8"
 		(shape input)
 		(at 31.75 55.88 180)
 		(fields_autoplaced yes)
@@ -1669,7 +1669,7 @@
 		)
 		(uuid "078ea333-2c65-46fc-9ed3-7306dcc26132")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 18.9072 55.88 0)
+			(at 19.8144 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1679,7 +1679,7 @@
 			)
 		)
 	)
-	(global_label "SPI1_SCK"
+	(global_label "SCK_1v8"
 		(shape input)
 		(at 120.65 50.8 180)
 		(fields_autoplaced yes)
@@ -1691,7 +1691,7 @@
 		)
 		(uuid "0e78d0b4-76fb-4084-a24c-c3ffe61b3891")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 108.6539 50.8 0)
+			(at 109.5611 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1701,7 +1701,7 @@
 			)
 		)
 	)
-	(global_label "SPI1_SCK"
+	(global_label "SCK_1v8"
 		(shape input)
 		(at 209.55 50.8 180)
 		(fields_autoplaced yes)
@@ -1713,7 +1713,7 @@
 		)
 		(uuid "24e6188c-9db8-4621-8109-b45a1511ac72")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 197.5539 50.8 0)
+			(at 198.4611 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1723,7 +1723,7 @@
 			)
 		)
 	)
-	(global_label "SPI1_MISO"
+	(global_label "MISO_1v8"
 		(shape output)
 		(at 209.55 48.26 180)
 		(fields_autoplaced yes)
@@ -1735,7 +1735,7 @@
 		)
 		(uuid "37d970fc-58a6-4e94-8167-a568c5c0579a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 196.7072 48.26 0)
+			(at 197.6144 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1745,7 +1745,7 @@
 			)
 		)
 	)
-	(global_label "SPI1_MISO"
+	(global_label "MISO_1v8"
 		(shape output)
 		(at 120.65 48.26 180)
 		(fields_autoplaced yes)
@@ -1757,7 +1757,7 @@
 		)
 		(uuid "5fad5dcc-b12c-45e7-b2dd-02858acd1ac0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.8072 48.26 0)
+			(at 108.7144 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1767,7 +1767,7 @@
 			)
 		)
 	)
-	(global_label "SPI1_MISO"
+	(global_label "MISO_1v8"
 		(shape output)
 		(at 31.75 50.8 180)
 		(fields_autoplaced yes)
@@ -1779,7 +1779,7 @@
 		)
 		(uuid "68dcca33-cf7b-42b1-b2d0-706837d488c7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 18.9072 50.8 0)
+			(at 19.8144 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1789,7 +1789,7 @@
 			)
 		)
 	)
-	(global_label "SPI1_MOSI"
+	(global_label "MOSI_1v8"
 		(shape input)
 		(at 209.55 53.34 180)
 		(fields_autoplaced yes)
@@ -1801,7 +1801,7 @@
 		)
 		(uuid "79decf75-0d48-4c4a-85b1-4e0fa43fb506")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 196.7072 53.34 0)
+			(at 197.6144 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1811,7 +1811,7 @@
 			)
 		)
 	)
-	(global_label "SPI1_SCK"
+	(global_label "SCK_1v8"
 		(shape input)
 		(at 31.75 53.34 180)
 		(fields_autoplaced yes)
@@ -1823,7 +1823,7 @@
 		)
 		(uuid "b46bef5d-4171-4149-8f05-bb41ab52f1d5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 19.7539 53.34 0)
+			(at 20.6611 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1833,7 +1833,7 @@
 			)
 		)
 	)
-	(global_label "SPI1_MOSI"
+	(global_label "MOSI_1v8"
 		(shape input)
 		(at 120.65 53.34 180)
 		(fields_autoplaced yes)
@@ -1845,7 +1845,7 @@
 		)
 		(uuid "f5d35e33-d647-4285-9421-db38ec61a724")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.8072 53.34 0)
+			(at 108.7144 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3612,7 +3612,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ICM-20948:QFN40P300X300X105-24N"
+		(property "Footprint" ""
 			(at 53.34 53.34 0)
 			(effects
 				(font
@@ -3999,7 +3999,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ICM-20948:QFN40P300X300X105-24N"
+		(property "Footprint" ""
 			(at 142.24 50.8 0)
 			(effects
 				(font
@@ -4388,7 +4388,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ICM-20948:QFN40P300X300X105-24N"
+		(property "Footprint" ""
 			(at 231.14 50.8 0)
 			(effects
 				(font
