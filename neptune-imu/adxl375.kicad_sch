@@ -1078,82 +1078,27 @@
 		)
 		(uuid "f93eca5f-09f4-4e67-860b-969bd3bd865a")
 	)
-	(global_label "SCK_1v8"
-		(shape input)
-		(at 102.87 41.91 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3a61f49c-3442-4dc5-8e39-102cbc84acfd")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 113.9589 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "MOSI_1v8"
-		(shape input)
+	(hierarchical_label "SDA"
+		(shape bidirectional)
 		(at 102.87 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "69e20d64-3509-4335-91c7-12e2689c6073")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 114.8056 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
+		(uuid "69cae60c-8fec-4111-830e-39ff547bcb61")
 	)
-	(global_label "MISO_1v8"
-		(shape output)
-		(at 102.87 46.99 0)
-		(fields_autoplaced yes)
+	(hierarchical_label "SCL"
+		(shape bidirectional)
+		(at 102.87 41.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "b54aa89e-8561-4e88-b21d-bb6cf9c58699")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 114.8056 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(hierarchical_label "CS"
-		(shape input)
-		(at 53.34 58.42 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "11b2861c-d974-43ce-b841-e71e8370ffdb")
+		(uuid "70ded71f-09bb-41bc-b1a5-bf079ce31fe0")
 	)
 	(hierarchical_label "INT2"
 		(shape output)
@@ -1176,6 +1121,72 @@
 			(justify left)
 		)
 		(uuid "c3b9b344-554b-48cc-bcc7-2cbfb7d924f9")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 53.34 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0183421d-27e1-4b0f-b311-b18eb236bef0")
+		(property "Reference" "#PWR028"
+			(at 53.34 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 53.34 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 53.34 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "152e5700-d8cd-4537-9db1-666426d3aead")
+		)
+		(instances
+			(project "neptune-imu"
+				(path "/5267d5be-f3eb-4ed0-80b1-f192444f0b69/c385354e-c644-4b4a-bcac-6e87af3cb5e2"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -1270,7 +1281,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 48.26 59.69 0)
 			(effects
 				(font
@@ -1605,7 +1616,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 36.83 59.69 0)
 			(effects
 				(font
@@ -1716,6 +1727,73 @@
 	)
 	(symbol
 		(lib_id "power:+1V8")
+		(at 102.87 46.99 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a872599a-5a63-4c38-9860-25a142a2412c")
+		(property "Reference" "#PWR034"
+			(at 99.06 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+1V8"
+			(at 106.68 46.9899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+1V8\""
+			(at 102.87 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "72f266f4-8f97-461d-ac63-2f98752c8685")
+		)
+		(instances
+			(project "neptune-imu"
+				(path "/5267d5be-f3eb-4ed0-80b1-f192444f0b69/c385354e-c644-4b4a-bcac-6e87af3cb5e2"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+1V8")
 		(at 50.8 41.91 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1808,7 +1886,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 53.34 35.56 0)
 			(effects
 				(font
@@ -1943,7 +2021,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "neptune-imu-footprints:LGA-14_L5.0-W3.0-P0.80-BL-1"
 			(at 78.74 64.77 0)
 			(effects
 				(font
