@@ -3659,13 +3659,13 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 113.03) (xy 78.74 113.03)
+			(xy 246.38 119.38) (xy 248.92 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0a5f9e4e-ef1c-4b7b-8d2d-64a32c2cff06")
+		(uuid "0a1478f3-a90a-4ba8-9e3f-e69f1791f111")
 	)
 	(wire
 		(pts
@@ -4119,6 +4119,16 @@
 	)
 	(wire
 		(pts
+			(xy 246.38 114.3) (xy 248.92 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c16053c1-0382-4478-bb86-a74a9192f113")
+	)
+	(wire
+		(pts
 			(xy 138.43 40.64) (xy 138.43 41.91)
 		)
 		(stroke
@@ -4418,7 +4428,7 @@
 		(uuid "5ffc6f9a-461a-44cb-a0d3-a29f9b2621dc")
 	)
 	(label "ICM209481_INT_1v8"
-		(at 78.74 113.03 0)
+		(at 78.74 118.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4570,6 +4580,50 @@
 		(uuid "3d994474-fef5-4ad8-a771-e99ce04e42fe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 84.5902 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "I2C_SCL_1v8"
+		(shape bidirectional)
+		(at 248.92 114.3 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "635d3fa9-f6ff-468f-8c45-a96afa8f1230")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 264.9302 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "I2C_SDA_1v8"
+		(shape bidirectional)
+		(at 248.92 119.38 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9bf6eb6f-26e0-4db3-b615-fab960d62fe9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 264.9907 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8495,36 +8549,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "SDA" bidirectional
-			(at 76.2 116.84 0)
-			(uuid "919ebc3b-9a21-415d-b744-0c8505fc7489")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "SCL" bidirectional
-			(at 76.2 120.65 0)
-			(uuid "5bf17a61-d7f2-4101-8071-b07c9745394e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "INT_1" output
-			(at 76.2 113.03 0)
-			(uuid "184f423a-8ac2-4dd6-9707-854dab7fa76f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(instances
