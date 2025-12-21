@@ -3878,10 +3878,6 @@
 		(uuid "0b72df77-bb1b-4ffb-acd3-1831e41e4934")
 	)
 	(no_connect
-		(at 236.22 44.45)
-		(uuid "105fb3e6-4324-4c33-9daf-c3fc3058f509")
-	)
-	(no_connect
 		(at 223.52 72.39)
 		(uuid "141e2e6b-b432-4499-a660-323c0fcc50fc")
 	)
@@ -4465,6 +4461,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 82.55) (xy 140.97 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bb7ef3c-5629-4f22-97e7-185596573d00")
+	)
+	(wire
+		(pts
 			(xy 158.75 115.57) (xy 158.75 114.3)
 		)
 		(stroke
@@ -4502,6 +4508,16 @@
 			(type default)
 		)
 		(uuid "7bc25fdf-3bf2-4f69-bbd5-b5f93df7a3cd")
+	)
+	(wire
+		(pts
+			(xy 137.16 80.01) (xy 137.16 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80764c5d-131f-4152-992c-a1008eda422e")
 	)
 	(wire
 		(pts
@@ -4682,16 +4698,6 @@
 			(type default)
 		)
 		(uuid "aada28c5-c10e-4c47-8afb-c09d3925e2ea")
-	)
-	(wire
-		(pts
-			(xy 133.35 82.55) (xy 140.97 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad8f8841-d230-4ee4-ac5f-9f1aa6aec9ab")
 	)
 	(wire
 		(pts
@@ -5123,16 +5129,6 @@
 		)
 		(uuid "3fac2f6c-bd2f-4fd1-a397-8a199b7fd76f")
 	)
-	(label "VOUT_B1"
-		(at 133.35 82.55 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "40509cb6-f701-4d9a-8fed-f23275896bc2")
-	)
 	(label "ADXL375_INT1_3v3"
 		(at 215.9 115.57 180)
 		(effects
@@ -5242,6 +5238,16 @@
 			(justify left bottom)
 		)
 		(uuid "7f6818ca-7997-4cab-a29a-f5888467ba46")
+	)
+	(label "ICM209481_INT_3v3"
+		(at 73.66 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8441305c-db9b-4f7e-b188-9ba98d071b52")
 	)
 	(label "SWCLK"
 		(at 72.39 82.55 0)
@@ -5372,16 +5378,6 @@
 			(justify right bottom)
 		)
 		(uuid "e560fb0a-eed9-46bc-a113-90d507e64853")
-	)
-	(label "ICM209481_INT_1v8"
-		(at 73.66 52.07 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e8b2259b-d18d-48f2-86ff-42b946a300d4")
 	)
 	(label "I2C_2_SDA"
 		(at 222.25 34.29 180)
@@ -8772,6 +8768,73 @@
 			(project "neptune-imu"
 				(path "/5267d5be-f3eb-4ed0-80b1-f192444f0b69"
 					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 236.22 44.45 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99e59804-1844-4e25-a5c1-beb9de9554ea")
+		(property "Reference" "#PWR044"
+			(at 242.57 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 240.03 44.4499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 236.22 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "df9f17ed-6251-49c1-86d6-565615accde7")
+		)
+		(instances
+			(project "neptune-imu"
+				(path "/5267d5be-f3eb-4ed0-80b1-f192444f0b69"
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
