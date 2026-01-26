@@ -3878,6 +3878,10 @@
 		(uuid "0b72df77-bb1b-4ffb-acd3-1831e41e4934")
 	)
 	(no_connect
+		(at 223.52 41.91)
+		(uuid "13212c54-7c7a-4280-97f2-5703515781de")
+	)
+	(no_connect
 		(at 223.52 72.39)
 		(uuid "141e2e6b-b432-4499-a660-323c0fcc50fc")
 	)
@@ -3936,10 +3940,6 @@
 	(no_connect
 		(at 223.52 52.07)
 		(uuid "8029d930-c1b4-40c5-a006-acf63603e717")
-	)
-	(no_connect
-		(at 236.22 41.91)
-		(uuid "82e920a8-3064-4de7-be23-297422398c3c")
 	)
 	(no_connect
 		(at 236.22 82.55)
@@ -4016,10 +4016,6 @@
 	(no_connect
 		(at 45.72 74.93)
 		(uuid "f9aaf292-ea1b-4214-81cd-1d1c358213ab")
-	)
-	(no_connect
-		(at 236.22 39.37)
-		(uuid "fc1960c1-5fa9-4c6f-affa-0cde159c20c8")
 	)
 	(no_connect
 		(at 236.22 74.93)
@@ -4871,16 +4867,6 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 41.91) (xy 223.52 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d691f5a6-51b5-406b-a0a8-6302013ac973")
-	)
-	(wire
-		(pts
 			(xy 71.12 80.01) (xy 72.39 80.01)
 		)
 		(stroke
@@ -5687,73 +5673,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 220.98 41.91 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "082fc250-b6fc-452e-bbfa-1f68b9e6758f")
-		(property "Reference" "#PWR075"
-			(at 214.63 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 217.17 41.9099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 220.98 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 220.98 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 220.98 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "efbd12de-bb60-4817-ba53-a095f2746a22")
-		)
-		(instances
-			(project "neptune-imu"
-				(path "/5267d5be-f3eb-4ed0-80b1-f192444f0b69"
-					(reference "#PWR075")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 151.13 40.64 180)
 		(unit 1)
@@ -6036,6 +5955,73 @@
 			(project "neptune-imu"
 				(path "/5267d5be-f3eb-4ed0-80b1-f192444f0b69"
 					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 236.22 41.91 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "10bc8238-5922-4675-a8d7-70cc4be1d533")
+		(property "Reference" "#PWR048"
+			(at 242.57 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 240.03 41.9099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 236.22 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9146633f-c4ca-4fac-bdc1-5cb1c26d6426")
+		)
+		(instances
+			(project "neptune-imu"
+				(path "/5267d5be-f3eb-4ed0-80b1-f192444f0b69"
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -7756,6 +7742,73 @@
 			(project "neptune-imu"
 				(path "/5267d5be-f3eb-4ed0-80b1-f192444f0b69"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 236.22 39.37 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4cd9a973-c3ea-4ad2-b4c3-b10be7cb4dd1")
+		(property "Reference" "#PWR049"
+			(at 242.57 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 240.03 39.3699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 236.22 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d91c92bc-cfd3-43a9-9b33-17768272694c")
+		)
+		(instances
+			(project "neptune-imu"
+				(path "/5267d5be-f3eb-4ed0-80b1-f192444f0b69"
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
